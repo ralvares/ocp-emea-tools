@@ -120,6 +120,11 @@ func main() {
         return 
     }
 
+    if len(*domainPtr) <= 0 {
+        flag.Usage()
+        os.Exit(1)
+    }
+
     if len(*domainPtr) > 0 && len(*nodePtr) > 0 {
         fmt.Printf("Domain: %s\n\n", *domainPtr)
         if strings.Contains(*nodePtr,","){
@@ -143,7 +148,7 @@ func main() {
     if *appsPtr {
         check_apps(*domainPtr)
      }
-    
+
      fmt.Printf("\n######################################################\n\n")
 
 }
