@@ -1,4 +1,4 @@
-# Openshift Container Platform v4.x DNS checker
+# Openshift Container Platform v4.x - oc plugins
 
 A proper DNS configuration ensures the OpenShift Container Platform software is deployed successfully.
 
